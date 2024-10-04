@@ -1,0 +1,409 @@
+/* Estilo para fundo escuro */
+#image-filter-form {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #44485e;
+    border: 1px solid #44485e;
+    border-radius: 8px;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#image-filter-form h3 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+#image-filter-form > div {
+    margin-bottom: 20px;
+}
+
+#image-filter-form label {
+    font-weight: bold;
+    color: #fff;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+#image-filter-form input[type="text"],
+#image-filter-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #666;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+#image-filter-form input[type="text"]:focus,
+#image-filter-form select:focus {
+    outline: none;
+    border-color: #1e90ff;
+    box-shadow: 0 0 0 2px rgba(30, 144, 255, 0.2);
+}
+
+#image-filter-form .checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+#image-filter-form .checkbox-group label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    margin: 0;
+}
+
+#image-filter-form .checkbox-group input[type="checkbox"] {
+    margin-right: 5px;
+    transform: scale(1.2);
+    accent-color: #1e90ff;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#image-filter-form button {
+    color: #fff;
+    background-color: #7367f0;
+    border-color: #7367f0;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: calc(50% - 5px);
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+#image-filter-form button:hover {
+    color: #FFFFFF;
+    background-color: transparent;
+    background-image: linear-gradient(72.47deg, #7367F0 23%, #7367F0B3 100%);
+    box-shadow: 0 .125rem .375rem 0 rgba(115,103,240,.3);
+}
+
+#image-filter-form button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* Estilo para o título "Applied Filters" */
+#applied-filters h4 {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#filters-summary {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #666;
+    border-radius: 4px;
+    background-color: #333;
+}
+
+.filter-item {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    background-color: #555;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.remove-filter {
+    cursor: pointer;
+    margin-left: 5px;
+    color: #ff6347;
+}
+
+/* Estilos atualizados para o Select2 */
+#image-filter-form .select2-container--default .select2-selection--multiple {
+    background-color: #44485e;
+    border: 1px solid #666;
+    color: #fff;
+}
+
+#image-filter-form .select2-container--default.select2-container--focus .select2-selection--multiple {
+    border-color: #1e90ff;
+    box-shadow: 0 0 0 2px rgba(30, 144, 255, 0.2);
+}
+
+#image-filter-form .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #7367f0;
+    border: 1px solid #7367f0;
+    color: #fff !important;
+}
+
+#image-filter-form .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    color: #fff !important;
+}
+
+#image-filter-form .select2-dropdown {
+    background-color: #44485e;
+    border: 1px solid #666;
+}
+
+#image-filter-form .select2-container--default .select2-search--dropdown .select2-search__field {
+    background-color: #44485e;
+    color: #fff;
+}
+
+#image-filter-form .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover {
+    color: #fff;
+    background-color: #5e52cc;
+}
+
+#image-filter-form .select2-container--default .select2-selection--multiple .select2-search--inline .select2-search__field {
+    color: #fff !important;
+}
+
+#image-filter-form .select2-container--default .select2-selection--multiple .select2-search--inline .select2-search__field::placeholder {
+    color: #ccc;
+}
+
+/* Estilos atualizados para o Select2 results */
+#image-filter-form .select2-container--default .select2-results__options {
+    background-color: #44485e;
+}
+
+#image-filter-form .select2-container--default .select2-results__option {
+    background-color: #44485e;
+    color: #fff;
+}
+
+#image-filter-form .select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #7367f0 !important;
+    color: #fff !important;
+}
+
+#image-filter-form .select2-container--default .select2-results__option[aria-selected=true] {
+    background-color: #5e52cc;
+}
+
+#image-filter-form .select2-container--default .select2-results__option:hover {
+    background-color: #7367f0 !important;
+    color: #fff !important;
+}
+
+/* Estilos atualizados para o dropdown do Select2 */
+#image-filter-form .select2-container--default .select2-dropdown {
+    background-color: #44485e !important;
+    border: 1px solid #666 !important;
+    border-radius: 4px !important;
+}
+
+#image-filter-form .select2-container--default.select2-container--open .select2-dropdown--below {
+    border-top: none !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+#image-filter-form .select2-container--default .select2-results__option {
+    background-color: #44485e !important;
+    color: #fff !important;
+}
+
+#image-filter-form .select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #7367f0 !important;
+    color: #fff !important;
+}
+
+#image-filter-form .select2-container--default .select2-results__option[aria-selected=true] {
+    background-color: #5e52cc !important;
+}
+
+#image-filter-form .select2-container--default .select2-search--dropdown .select2-search__field {
+    background-color: #44485e !important;
+    color: #fff !important;
+    border: 1px solid #666 !important;
+}
+
+/* Estilo para a barra de rolagem no dropdown */
+#image-filter-form .select2-results__options::-webkit-scrollbar {
+    width: 8px;
+}
+
+#image-filter-form .select2-results__options::-webkit-scrollbar-track {
+    background: #44485e;
+}
+
+#image-filter-form .select2-results__options::-webkit-scrollbar-thumb {
+    background-color: #7367f0;
+    border-radius: 4px;
+}
+
+/* Forçar a largura do dropdown para corresponder ao campo de seleção */
+#image-filter-form .select2-container {
+    width: 100% !important;
+}
+
+/* Estilos da galeria */
+.custom-gallery-masonry {
+    column-count: 5;
+    column-gap: 10px;
+    margin-top: 20px;
+    background-color: #25293c;
+    padding: 24px;
+}
+
+.masonry-item {
+    break-inside: avoid;
+    margin-bottom: 10px;
+    overflow: hidden;
+    border-radius: 4px;
+    position: relative;
+    transition: transform 0.2s ease-in-out;
+}
+
+.masonry-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.2s ease-in-out;
+}
+
+.masonry-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo da paginação */
+#gallery-pagination {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    list-style-type: none;
+}
+
+.pagination .page-numbers {
+    color: #7367f0;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #7367f0;
+    border-radius: 4px;
+    margin: 0 2px;
+    transition: background-color 0.2s, color 0.2s;
+    display: inline-block;
+}
+
+.pagination .page-numbers:hover:not(.current) {
+    border-color: #7367f0 !important;
+    color: #7367f0 !important;
+    background-color: #3a3b64 !important;
+}
+
+.pagination .page-numbers.current {
+    background-color: #7367f0;
+    color: #fff;
+    border-color: #7367f0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .custom-gallery-masonry {
+        column-count: 2;
+    }
+
+    #image-filter-form {
+        max-width: 100%;
+    }
+
+    .filter-buttons {
+        flex-direction: column;
+    }
+
+    #image-filter-form button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+.select2-dropdown {
+    background-color: #44485e !important;
+    border: 1px solid #aaa;
+      border-bottom-style: solid;
+      border-bottom-color: rgb(170, 170, 170);
+    border-radius: 4px;
+      border-bottom-right-radius: 4px;
+      border-bottom-left-radius: 4px;
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    left: -100000px;
+    width: 100%;
+    z-index: 1051;
+    color: #FFFFFF !important;
+    font-weight: 500 !important;
+  }
+
+
+  .select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #7367f0 !important;
+    color: white;
+  }
+
+
+  #image-filter-form .checkbox-group input[type="checkbox"] {
+    margin-right: 5px;
+    transform: scale(1.2);
+    accent-color: #7367f0;
+    border-radius: .267em;
+    border: 2px solid #76778e;
+    background-color: transparent; /* Fundo transparente no estado unchecked */
+    appearance: none; /* Remove o estilo padrão do navegador */
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+#image-filter-form .checkbox-group input[type="checkbox"]::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #44485e; /* Fundo cinza no estado unchecked */
+    border-radius: .267em;
+}
+
+#image-filter-form .checkbox-group input[type="checkbox"]:checked {
+    background-color: #7367f0; /* Mantém o fundo azul no estado checked */
+    border: 2px solid #1e90ff; /* Borda mais grossa no estado checked */
+    appearance: checkbox; /* Retorna o estilo padrão para o estado checked */
+}
+
+#image-filter-form .checkbox-group input[type="checkbox"]:checked::before {
+    content: none; /* Remove o pseudo-elemento no estado checked */
+}
+
+
+
+
